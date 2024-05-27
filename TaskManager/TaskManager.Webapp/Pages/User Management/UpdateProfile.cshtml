@@ -1,0 +1,39 @@
+﻿@page
+@model TaskManager.Webapp.Pages.UpdateProfileModel
+
+@{
+    ViewData["Title"] = "Update Profile";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="css/profile.css">
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            Update Profile Information
+        </div>
+        <form method="post" class="card-body">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                @* <input type="email" class="form-control" id="email" name="Email" value="@Model.User.Email" readonly> *@
+            </div>
+            <div class="mb-3">
+                <label for="vorname" class="form-label">Vorname</label>
+                @* <input type="text" class="form-control" id="vorname" name="Vorname" value="@Model.User.Profile.Vorname" required> *@
+            </div>
+            <div class="mb-3">
+                <label for="nachname" class="form-label">Nachname</label>
+                @* <input type="text" class="form-control" id="nachname" name="Nachname" value="@Model.User.Profile.Nachname" required> *@
+            </div>
+            <div class="mb-3">
+                <label for="geburtstag" class="form-label">Geburtsdatum</label>
+                @* <input type="date" class="form-control" id="geburtstag" name="Geburtsdatum" value="@Model.User.Profile.Geburtsdatum.ToString("yyyy-MM-dd")" required> *@
+            </div>
+            <div class="card-footer text-end">
+                <button type="submit" class="btn btn-primary">Speichern</button>
+                <a href="@Url.Page("/Profile")" class="btn btn-secondary">Abbrechen</a>
+            </div>
+        </form>
+    </div>
+</div>

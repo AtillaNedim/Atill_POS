@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js'></script>
+    <script type="text/javascript" src="js/Calendar.js"></script>
+</head>
+
+<body>
+<div class="text-center">
+    <h1 class="display-4">Willkommen</h1>
+    <p>DANISMAN Atilla Nedim, Praktische Arbeit 2023/24 mehr dazu <a asp-page="Task Management/Task">hier klicken</a></p>
+    @if (HttpContextAccessor.HttpContext.Session.GetString("Logged_in") == "true"){
+        <div class="col-md-4">
+            <div id='calendar'></div>
+        </div>
+    }
+</div>
+
+
+</body>
+</html>

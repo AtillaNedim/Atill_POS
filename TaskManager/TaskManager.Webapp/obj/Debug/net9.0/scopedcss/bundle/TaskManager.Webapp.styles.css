@@ -1,0 +1,59 @@
+/* _content/TaskManager.Webapp/Pages/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-plt7iz4btb] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-plt7iz4btb] {
+  color: #0077cc;
+}
+
+.btn-primary[b-plt7iz4btb] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-plt7iz4btb], .nav-pills .show > .nav-link[b-plt7iz4btb] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-plt7iz4btb] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-plt7iz4btb] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-plt7iz4btb] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-plt7iz4btb] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-plt7iz4btb] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+
+@media (hover: hover) {
+  .navbar-nav .dropdown:hover .dropdown-menu[b-plt7iz4btb] {
+    display: block;
+  }
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu[b-plt7iz4btb] {
+  display: block;
+}

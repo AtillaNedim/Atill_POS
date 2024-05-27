@@ -1,0 +1,23 @@
+﻿@page
+@model TaskManager.Webapp.Pages.AddSubject
+
+@{
+  ViewData["Title"] = "Create a Task";
+}
+<div class="container">
+  <h1>@ViewData["Title"]</h1>
+  <form method="post" class="mt-3">
+    <div class="mb-3">
+      <label for="subjectName" class="form-label">Subject Name</label>
+      <input type="text" class="form-control" id="subjectName" name="SubjectName" required>
+      <div class="invalid-feedback">
+        Please enter a subject name.
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="subjectDescription" class="form-label">Description</label>
+      <textarea class="form-control" id="subjectDescription" name="SubjectDescription" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Subject</button>
+  </form>
+</div>
