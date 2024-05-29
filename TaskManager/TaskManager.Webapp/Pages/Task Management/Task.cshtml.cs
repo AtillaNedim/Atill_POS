@@ -1,40 +1,40 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using TaskManager.Application.Repository;
 using TaskManager.Application.Domain;
 using Task = TaskManager.Application.Domain.Task;
 
 namespace TaskManager.Webapp.Pages;
-
 public class TaskModel : PageModel {
+    private readonly ILogger<TaskModel> _logger;
     private readonly TaskRepository _taskRepository;
     private readonly SubjectRepository _subjectRepository;
 
-    [BindProperty]
-    public Task Task { get; set; } 
+    public IList<Task> Tasks { get; set; }
 
-    [BindProperty]
-    public string NewSubject { get; set; }
-
-    public TaskModel(TaskRepository taskRepository, SubjectRepository subjectRepository) {
+    public TaskModel(TaskRepository taskRepository, SubjectRepository subjectRepository, ILogger<TaskModel> logger) {
         _taskRepository = taskRepository;
         _subjectRepository = subjectRepository;
+        _logger = logger;
     }
 
-    public async Task<IActionResult> OnPostAsync(string action) {
-        if (!ModelState.IsValid) {
-            return Page();
+    public void OnGet() {
+        try {
+            string userIdString = HttpContext.Session.GetString("User_Id");
+            if (Guid.TryParse(userIdString, out Guid userId)) {
+                Tasks = _taskRepository.GetAllTasksyUserId(userId);
+                _logger.LogInformation("Loaded {Count} subjects and tasks for user ID {UserId}.",Tasks.Count, userId);
+            } else {
+                _logger.LogWarning("User ID is invalid or not found in session.");
+                Tasks = new List<Task>();
+            }
+        } catch (Exception ex) {
+            _logger.LogError(ex, "An error occurred while loading subjects or tasks.");
+            Tasks = new List<Task>();
         }
-    
-        if (action == "AddSubject" && !string.IsNullOrEmpty(NewSubject)) {
-            string userId = HttpContext.Session.GetString("User_Id"); 
-            var subject = new Subject { Name = NewSubject, Userid = new Guid(userId)};
-            _subjectRepository.CreateSubject(subject);
-            return RedirectToPage();
-        }
-    
-        _taskRepository.CreateTask(Task);
-        return RedirectToPage("./Index");
     }
-
 }

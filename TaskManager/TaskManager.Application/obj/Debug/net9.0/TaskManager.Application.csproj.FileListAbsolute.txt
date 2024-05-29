@@ -10,3 +10,16 @@ C:\Users\atill\Desktop\pos_projekt\TaskManager\TaskManager.Application\obj\Debug
 C:\Users\atill\Desktop\pos_projekt\TaskManager\TaskManager.Application\obj\Debug\net9.0\refint\TaskManager.Application.dll
 C:\Users\atill\Desktop\pos_projekt\TaskManager\TaskManager.Application\obj\Debug\net9.0\TaskManager.Application.pdb
 C:\Users\atill\Desktop\pos_projekt\TaskManager\TaskManager.Application\obj\Debug\net9.0\ref\TaskManager.Application.dll
+C:\Users\atill\Desktop\Atill_POS\TaskManager\TaskManager.Application\bin\Debug\net9.0\TaskManager.Application.deps.json
+C:\Users\atill\Desktop\Atill_POS\TaskManager\TaskManager.Application\bin\Debug\net9.0\TaskManager.Application.dll
+C:\Users\atill\Desktop\Atill_POS\TaskManager\TaskManager.Application\bin\Debug\net9.0\TaskManager.Application.pdb
+C:\Users\atill\Desktop\Atill_POS\TaskManager\TaskManager.Application\obj\Debug\net9.0\TaskManager.Application.csproj.AssemblyReference.cache
+C:\Users\atill\Desktop\Atill_POS\TaskManager\TaskManager.Application\obj\Debug\net9.0\TaskManager.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atill\Desktop\Atill_POS\TaskManager\TaskManager.Application\obj\Debug\net9.0\TaskManager.Application.AssemblyInfoInputs.cache
+C:\Users\atill\Desktop\Atill_POS\TaskManager\TaskManager.Application\obj\Debug\net9.0\TaskManager.Application.AssemblyInfo.cs
+C:\Users\atill\Desktop\Atill_POS\TaskManager\TaskManager.Application\obj\Debug\net9.0\TaskManager.Application.csproj.CoreCompileInputs.cache
+C:\Users\atill\Desktop\Atill_POS\TaskManager\TaskManager.Application\obj\Debug\net9.0\TaskManager.Application.sourcelink.json
+C:\Users\atill\Desktop\Atill_POS\TaskManager\TaskManager.Application\obj\Debug\net9.0\TaskManager.Application.dll
+C:\Users\atill\Desktop\Atill_POS\TaskManager\TaskManager.Application\obj\Debug\net9.0\refint\TaskManager.Application.dll
+C:\Users\atill\Desktop\Atill_POS\TaskManager\TaskManager.Application\obj\Debug\net9.0\TaskManager.Application.pdb
+C:\Users\atill\Desktop\Atill_POS\TaskManager\TaskManager.Application\obj\Debug\net9.0\ref\TaskManager.Application.dll

@@ -50,7 +50,6 @@ public class LoginModel : PageModel {
 
                 return RedirectToPage("/Index");
             } else {
-                //TODO write the error in the div with the id                         <div id="errorSituation" class="form-text"></div>
                 ModelState.AddModelError(string.Empty, "Invalid password.");
             }
         } else {

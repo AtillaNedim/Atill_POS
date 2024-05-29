@@ -8366,11 +8366,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Test\\TaskManager.Test.csproj",
+      "projectUniqueName": "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Test\\TaskManager.Test.csproj",
       "projectName": "TaskManager.Test",
-      "projectPath": "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Test\\TaskManager.Test.csproj",
+      "projectPath": "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Test\\TaskManager.Test.csproj",
       "packagesPath": "C:\\Users\\atill\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Test\\obj\\",
+      "outputPath": "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\atill\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -8385,8 +8385,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj": {
-              "projectPath": "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj"
+            "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj": {
+              "projectPath": "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj"
             }
           }
         }

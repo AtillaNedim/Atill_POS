@@ -23,11 +23,11 @@
                 <p><strong>Nachname:</strong> @Model.User.Profile.Nachname</p>
                 <p><strong>Geburtsdatum:</strong> @Model.User.Profile.Geburtsdatum</p>
                 <p><div class="card-footer text-end">
-                    <a href="@Url.Page("/UpdateProfile")" class="btn btn-primary">
+                    <a href="@Url.Page("UpdateProfile")" class="btn btn-primary">
                         <i class="bi bi-pencil"></i> Bearbeiten
                     </a>
                     
-                    <a href="@Url.Page("/DeleteProfile")" class="btn btn-delete">
+                    <a href="@Url.Page("DeleteProfile")" class="btn btn-delete">
                         <i class="bi bi-trash"></i> Löschen
                     </a>
                 </div> </p>

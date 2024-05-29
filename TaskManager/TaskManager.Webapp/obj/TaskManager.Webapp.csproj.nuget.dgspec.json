@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Webapp\\TaskManager.Webapp.csproj": {}
+    "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Webapp\\TaskManager.Webapp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj": {
+    "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj",
+        "projectUniqueName": "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj",
         "projectName": "TaskManager.Application",
-        "projectPath": "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj",
+        "projectPath": "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj",
         "packagesPath": "C:\\Users\\atill\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Application\\obj\\",
+        "outputPath": "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\atill\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -104,14 +104,14 @@
         }
       }
     },
-    "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Webapp\\TaskManager.Webapp.csproj": {
+    "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Webapp\\TaskManager.Webapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Webapp\\TaskManager.Webapp.csproj",
+        "projectUniqueName": "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Webapp\\TaskManager.Webapp.csproj",
         "projectName": "TaskManager.Webapp",
-        "projectPath": "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Webapp\\TaskManager.Webapp.csproj",
+        "projectPath": "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Webapp\\TaskManager.Webapp.csproj",
         "packagesPath": "C:\\Users\\atill\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Webapp\\obj\\",
+        "outputPath": "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Webapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\atill\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -126,8 +126,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj": {
-                "projectPath": "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj"
+              "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj": {
+                "projectPath": "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj"
               }
             }
           }

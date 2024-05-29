@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J3QDly2peRKznpdvWABtBCQ3WxSFp5/5Yp2be7Amk0SpiS+cLgPqmaD7WrU4CWCQQtKUY2oXZoS7RX6H9LZ2Aw==",
+  "dgSpecHash": "z/0nKWF+ScOsVpFS01pYC5lI1ABIcT4v4YwSlTV5iSPoSq+662YukgjVxoYC9Uoe/d1vOvSVr27oAQg8DZH7RA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj",
+  "projectFilePath": "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\atill\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\atill\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

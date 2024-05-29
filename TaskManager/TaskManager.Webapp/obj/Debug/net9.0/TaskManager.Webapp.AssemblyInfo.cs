@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaskManager.Webapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a711170a64ea9b78cc095f22928346d654bea858")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+506701f82e76f7621740dcd342d5b93ef3929f5f")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskManager.Webapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskManager.Webapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

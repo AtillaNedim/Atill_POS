@@ -7420,11 +7420,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj",
+      "projectUniqueName": "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj",
       "projectName": "TaskManager.Application",
-      "projectPath": "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj",
+      "projectPath": "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Application\\TaskManager.Application.csproj",
       "packagesPath": "C:\\Users\\atill\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\atill\\Desktop\\pos_projekt\\TaskManager\\TaskManager.Application\\obj\\",
+      "outputPath": "C:\\Users\\atill\\Desktop\\Atill_POS\\TaskManager\\TaskManager.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\atill\\AppData\\Roaming\\NuGet\\NuGet.Config"

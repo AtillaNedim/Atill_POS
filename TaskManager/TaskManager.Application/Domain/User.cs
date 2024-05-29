@@ -16,6 +16,9 @@ namespace TaskManager.Application.Domain {
         public string Password { get; set; }
         public Profile Profile { get; set; }
 
+        public User() {
+        }
+
         public User(string email, string password, Profile pfId) {
             _id = Guid.NewGuid();
             Email = email;
