@@ -1,0 +1,37 @@
+﻿@page "{guid:guid}"
+@model TaskManager.Webapp.Pages.DetailsModel
+
+@{
+    ViewData["Title"] = "Task Details";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+@* <link rel="stylesheet" href="css/task-details.css"> *@
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            Task Information
+        </div>
+        <div class="card-body">
+            @if (Model.TaskDetails != null) {
+                <p><strong>Name:</strong> @Model.TaskDetails.Name</p>
+                <p><strong>Subject:</strong> @Model.TaskDetails.Subject</p>
+                <p><strong>Start Date:</strong> @Model.TaskDetails.StartDate.ToString("dd.MM.yyyy")</p>
+                <p><strong>End Date:</strong> @Model.TaskDetails.EndDate.ToString("dd.MM.yyyy")</p>
+                <p><strong>Difficulty:</strong> @Model.TaskDetails.Difficulty</p>
+                <div class="card-footer text-end">
+                    <a href="@Url.Page("EditTask", new { guid = Model.TaskDetails._id })" class="btn btn-primary">
+                        <i class="bi bi-pencil"></i> Bearbeiten
+                    </a>
+                    
+                    <a href="@Url.Page("DeleteTask",    new { guid = Model.TaskDetails._id })" class="btn btn-danger">
+                        <i class="bi bi-trash"></i> Löschen
+                    </a>
+                </div>
+            } else {
+                <p>Task details not found.</p>
+            }
+        </div>
+    </div>
+</div>

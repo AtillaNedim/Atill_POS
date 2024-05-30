@@ -54,6 +54,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFzayBNYW5hZ2VtZW50XGFkZFRhc2suY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/atill/Desktop/Atill_POS/TaskManager/TaskManager.Webapp/Pages/Task Management/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFzayBNYW5hZ2VtZW50XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/atill/Desktop/Atill_POS/TaskManager/TaskManager.Webapp/Pages/Task Management/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFzayBNYW5hZ2VtZW50XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/atill/Desktop/Atill_POS/TaskManager/TaskManager.Webapp/Pages/Task Management/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFzayBNYW5hZ2VtZW50XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/atill/Desktop/Atill_POS/TaskManager/TaskManager.Webapp/Pages/Task Management/Task.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFzayBNYW5hZ2VtZW50XFRhc2suY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

@@ -7,30 +7,52 @@ using Microsoft.Extensions.Logging;
 
 namespace TaskManager.Application.Repository
 {
-    public class TaskRepository {
+    public class TaskRepository
+    {
         private readonly ILogger<TaskRepository> _logger;
         private readonly IMongoCollection<Task> _taskCollection;
 
-        public TaskRepository(IMongoCollection<Task> taskCollection) {
+        public TaskRepository(IMongoCollection<Task> taskCollection)
+        {
             _taskCollection = taskCollection;
         }
 
-        public void CreateTask(Task task) {
+        public void CreateTask(Task task)
+        {
             _taskCollection.InsertOne(task);
         }
-/** 
-        public List<Task> GetTasksByUserId(Guid userId) {
-            var filter = Builders<Task>.Filter.Eq("UserId", userId);
-            return _taskCollection.Find(filter).ToList();
-        }
-*/
-        public IList<Task> GetAllTasksyUserId(Guid userId) {
-            try {
+
+        /**
+                public List<Task> GetTasksByUserId(Guid userId) {
+                    var filter = Builders<Task>.Filter.Eq("UserId", userId);
+                    return _taskCollection.Find(filter).ToList();
+                }
+        */
+        public IList<Task> GetAllTasksyUserId(Guid userId)
+        {
+            try
+            {
                 return _taskCollection.Find(task => task.Userid == userId).ToList();
-            } catch (Exception ex) {
+            }
+            catch (Exception ex)
+            {
                 _logger.LogError(ex, "Failed to load Tasks for user ID {UserId}", userId);
                 return new List<Task>();
             }
         }
+
+        public Task GetTaskByGuid(Guid guid)
+        {
+            try
+            {
+                return _taskCollection.Find<Task>(task => task._id == guid).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Failed to load Task with GUID {Guid}", guid);
+                return null;
+            }
+        }
+
     }
 }
