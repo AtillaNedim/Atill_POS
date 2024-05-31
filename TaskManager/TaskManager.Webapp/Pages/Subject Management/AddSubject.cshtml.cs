@@ -20,7 +20,7 @@ namespace TaskManager.Webapp.Pages {
             if (Guid.TryParse(userIdString, out Guid userId)) {
                 var subject = new Subject { Name = subjectName, Userid = userId };
                 _subjectRepository.CreateSubject(subject);
-                return RedirectToPage("Task");
+                return RedirectToPage("/Task Management/addTask");
             } else  {
                 ModelState.AddModelError("", "You must be logged in to create a subject.");
                 return Page();

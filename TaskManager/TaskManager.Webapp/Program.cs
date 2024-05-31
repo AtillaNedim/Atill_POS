@@ -7,7 +7,6 @@ using TaskManager.Application.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configure session
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
@@ -15,19 +14,17 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
-
-// Add services to the container
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
-// Configure MongoDB
 var mongoConnectionString = builder.Configuration.GetConnectionString("MongoDb");
 var mongoDatabaseName = builder.Configuration["MongoDbDatabaseName"];
 builder.Services.AddSingleton<TasksContext>(sp =>
     new TasksContext(mongoConnectionString, mongoDatabaseName));
 
-// Repository services
+builder.Services.AddLogging();
+
 builder.Services.AddScoped<UserRepository>(provider =>
     new UserRepository(provider.GetRequiredService<TasksContext>().Users));
 builder.Services.AddScoped<ProfileRepository>(provider =>
@@ -47,8 +44,13 @@ if (!app.Environment.IsDevelopment()) {
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
 app.UseRouting();
+
 app.UseSession();
+
+app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapRazorPages();
 app.Run();

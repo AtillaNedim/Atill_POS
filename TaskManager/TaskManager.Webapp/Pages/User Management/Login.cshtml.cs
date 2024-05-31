@@ -43,10 +43,11 @@ public class LoginModel : PageModel {
                 HttpContext.Session.SetString("Logged_in", "true");
                 HttpContext.Session.SetString("US_vorname", user.Profile.Vorname);
                 HttpContext.Session.SetString("User_Id", user._id.ToString());
+                HttpContext.Session.SetString("UserProfile_Id", user.Profile._id.ToString());
 
-                _logger.LogInformation("Session created: Logged_in = {LoggedIn}, User_Id = {UserId}", 
+                _logger.LogInformation("Session created: Logged_in = {LoggedIn}, User_Id = {UserId},  UserProfile_Id = {UserProfile_Id}", 
                     HttpContext.Session.GetString("Logged_in"),
-                    HttpContext.Session.GetString("User_Id"));
+                    HttpContext.Session.GetString("User_Id"), HttpContext.Session.GetString("UserProfile_Id"));
 
                 return RedirectToPage("/Index");
             } else {

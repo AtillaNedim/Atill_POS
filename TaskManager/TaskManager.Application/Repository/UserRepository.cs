@@ -68,4 +68,13 @@ public class UserRepository {
             .Set(u => u.Profile.Geburtsdatum, updatedUser.Profile.Geburtsdatum);
         _user.UpdateOne(filter, update);
     }
+    
+    public async Task<bool> DeleteUserbyid(Guid subjectId) {
+        try {
+            var deleteResult = await _user.DeleteOneAsync(x => x._id == subjectId);
+            return deleteResult.DeletedCount > 0;
+        } catch (Exception ex) {
+            return false;
+        }
+    }
 }

@@ -18,6 +18,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\atill\Desktop\Atill_POS\TaskManager\TaskManager.Webapp
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/atill/Desktop/Atill_POS/TaskManager/TaskManager.Webapp/Pages/Subject Management/AddSubject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdCBNYW5hZ2VtZW50XEFkZFN1YmplY3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/atill/Desktop/Atill_POS/TaskManager/TaskManager.Webapp/Pages/Subject Management/Subject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdCBNYW5hZ2VtZW50XFN1YmplY3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/atill/Desktop/Atill_POS/TaskManager/TaskManager.Webapp/Pages/User Management/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlciBNYW5hZ2VtZW50XExvZ2luLmNzaHRtbA==
@@ -46,8 +58,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atill/Desktop/Atill_POS/TaskManager/TaskManager.Webapp/Pages/Task Management/AddSubject.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFzayBNYW5hZ2VtZW50XEFkZFN1YmplY3QuY3NodG1s
+[C:/Users/atill/Desktop/Atill_POS/TaskManager/TaskManager.Webapp/Pages/Subject Management/SubjectDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdCBNYW5hZ2VtZW50XFN1YmplY3REZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/atill/Desktop/Atill_POS/TaskManager/TaskManager.Webapp/Pages/Subject Management/SubjectDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdCBNYW5hZ2VtZW50XFN1YmplY3REZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/atill/Desktop/Atill_POS/TaskManager/TaskManager.Webapp/Pages/Task Management/addTask.cshtml]
@@ -78,8 +94,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlciBNYW5hZ2VtZW50XFByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atill/Desktop/Atill_POS/TaskManager/TaskManager.Webapp/Pages/User Management/UpdateProfile.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlciBNYW5hZ2VtZW50XFVwZGF0ZVByb2ZpbGUuY3NodG1s
+[C:/Users/atill/Desktop/Atill_POS/TaskManager/TaskManager.Webapp/Pages/User Management/UserDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlciBNYW5hZ2VtZW50XFVzZXJEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/atill/Desktop/Atill_POS/TaskManager/TaskManager.Webapp/Pages/_ViewImports.cshtml]

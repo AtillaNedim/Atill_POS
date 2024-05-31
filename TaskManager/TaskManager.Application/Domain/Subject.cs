@@ -4,7 +4,8 @@
         public Guid _id { get; private set; }
         public string Name { get; set; }
         public Guid Userid { get; set; }
-
+        public long TaskCount { get; set; }
+        
         public Subject() {
         }
         

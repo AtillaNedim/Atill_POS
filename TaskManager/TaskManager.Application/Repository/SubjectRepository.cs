@@ -32,5 +32,24 @@ namespace TaskManager.Application.Repository
             }
         }
 
+        public IList<Subject> GetAllSubjectsByUserId(Guid userId) {
+            try {
+                return _subjectCollection.Find(subject => subject.Userid == userId).ToList();
+            } catch (Exception ex) {
+                _logger.LogError(ex, "Failed to load subjects for user ID {UserId}", userId);
+                return new List<Subject>(); // Return an empty list on error
+            }
+        }
+        
+        public async Task<bool> DeleteSubjectById(Guid subjectId) {
+            try {
+                var deleteResult = await _subjectCollection.DeleteOneAsync(x => x._id == subjectId);
+                return deleteResult.DeletedCount > 0;
+            } catch (Exception ex) {
+                _logger.LogError(ex, "Failed to delete subject with ID {SubjectId}", subjectId);
+                return false;
+            }
+        }
+        
     }
 }

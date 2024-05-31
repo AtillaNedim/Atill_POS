@@ -41,7 +41,7 @@
                         <a class="ms-2" asp-page="Details" asp-route-guid="@task._id"><i class="fa-solid fa-circle-info"></i></a>
                         <a class="ms-2" asp-page="Edit" asp-route-guid="@task._id"><i class="fa-regular fa-pen-to-square"></i></a>
                         @* <a class="ms-2" asp-page="Add" asp-route-guid="@task._id"><i class="fa-solid fa-plus"></i></a> *@
-                        <a class="ms-2" asp-page="Delete" asp-route-guid="@task._id"><i class="fa-solid fa-trash"></i></a>
+                        <a class="ms-2" asp-page="Delete" asp-route-TaskId="@task._id"><i class="fa-solid fa-trash"></i></a>
       </td>
     </tr>
   }

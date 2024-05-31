@@ -1,0 +1,40 @@
+﻿@page "Subject/{subjectName}"
+@* @page *@
+@model TaskManager.Webapp.Pages.SubjectTasksModel
+
+@{
+    ViewData["Title"] = "Tasks for Subject: " + Model.SubjectName;
+}
+
+<h1>Tasks for @Model.SubjectName</h1>
+
+
+
+@if (Model.Tasks.Any()) {
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Difficulty</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var task in Model.Tasks) {
+            <tr>
+                <td>@task.Name</td>
+                <td>@task.StartDate.ToString("dd.MM.yyyy")</td>
+                <td>@task.EndDate.ToString("dd.MM.yyyy")</td>
+                <td>@task.Difficulty</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+} else {
+    <p>No tasks found for this subject.</p>
+}
+
+<div>
+    <a asp-page="Subject" class="btn btn-primary">Zurück zu den Subjects</a>
+</div>

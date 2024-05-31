@@ -11,6 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <AdditionalFiles Include="Pages\Subject Management\AddSubject.cshtml" />
+    <AdditionalFiles Include="Pages\Subject Management\Subject.cshtml" />
     <AdditionalFiles Include="Pages\User Management\Login.cshtml" />
     <AdditionalFiles Include="Pages\User Management\Register.cshtml" />
   </ItemGroup>

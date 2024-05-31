@@ -39,7 +39,7 @@ namespace TaskManager.Webapp.Pages {
         public IActionResult OnPost() {
             if (!ModelState.IsValid) {
                 _logger.LogError("Registration form is not valid.");
-                return Page(); // Return the current page with validation summaries
+                return Page();
             }
 
             if (_userRepository.DoesUserExistByEmail(Email)) {
@@ -48,22 +48,20 @@ namespace TaskManager.Webapp.Pages {
                 return Page();
             }
 
-            var profile = new Profile {
-                Vorname = vorname,
-                Nachname = nachname,
-                Geburtsdatum = geburtsdatum
-            };
+            Profile profile = new Profile(vorname, nachname, geburtsdatum);
+            _profileRepository.CreateProfile(profile);
 
             string hashedPassword = _userRepository.HashPassword(Password);
-            var newUser = new User(Email, hashedPassword, profile);
 
+            User newUser = new User(Email, hashedPassword, profile);
             _userRepository.CreateUser(newUser);
-            _profileRepository.CreateProfile(profile);
+
             _logger.LogInformation($"New user registered: {Email}");
-            _logger.LogInformation($"New Profile for {vorname} registered: {profile}");
-            _logger.LogInformation($"ID: {_userRepository.GetUserIdByEmail(Email)}");
+            _logger.LogInformation($"New Profile for {vorname} registered with ID: {profile._id}");
+            _logger.LogInformation($"User ID: {newUser._id}");
 
             return RedirectToPage("Login");
         }
+
     }
 }

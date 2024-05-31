@@ -5,7 +5,7 @@ using Bogus.DataSets;
 namespace TaskManager.Application.Domain {
     public class Profile {
         [Key]
-        public Guid Id { get; set; }
+        public Guid _id { get; set; }
 
         [Required]
         [StringLength(50, MinimumLength = 2)]
@@ -17,5 +17,13 @@ namespace TaskManager.Application.Domain {
 
         [Required]
         public DateTime Geburtsdatum { get; set; }
+        
+        public Profile(string vorname, string nachname, DateTime geburtsdatum) {
+            _id = Guid.NewGuid();
+            Vorname = vorname;
+            Nachname = nachname;
+            Geburtsdatum = geburtsdatum;
+        }
+
     }
 }

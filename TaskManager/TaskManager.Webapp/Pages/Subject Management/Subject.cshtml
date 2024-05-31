@@ -1,0 +1,41 @@
+﻿@page
+@model TaskManager.Webapp.Pages.SubjectModel
+
+@{
+    ViewData["Title"] = "Subject Overview";
+}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+@if (TempData["SuccessMessage"] != null) {
+    <div class="alert alert-success" role="alert">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<h3>Subjects and Tasks</h3>
+<p>@Model.Subjects.Count subjects found. Updated at @DateTime.Now.ToString("HH:mm").</p>
+
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Sum. Tasks</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach(var subject in Model.Subjects) {
+        <tr>
+            <td>@subject.Name</td>
+            <td>@subject.TaskCount</td>
+            <td>
+                <a class="ms-2" asp-page="SubjectDetails" asp-route-subjectName="@Uri.EscapeDataString(subject.Name)"><i class="fa-solid fa-circle-info"></i></a>
+                <a class="ms-2" asp-page="Edit" asp-route-subjectName="@Uri.EscapeDataString(subject.Name)"><i class="fa-regular fa-pen-to-square"></i></a>
+                <a class="ms-2" asp-page="SubjectDelete" asp-route-subjectId="@Uri.EscapeDataString(subject._id.ToString())"><i class="fa-solid fa-trash"></i></a>
+
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
